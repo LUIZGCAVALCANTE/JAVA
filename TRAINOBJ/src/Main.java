@@ -13,8 +13,7 @@ public class Main {
 	       y = new Traingule();
 
 	       
-		double area, areab;
-		double area_maior;
+		
 		
 		System.out.printf("Insira o valor de ax");
 		x.a= sc.nextDouble();
@@ -26,7 +25,7 @@ public class Main {
 
 		x.c= sc.nextDouble();
 		
-		area = (x.a+x.b+x.c)/2;
+		double area = x.area();
 		
         System.out.printf("A area do triângulo 1 é de %.2f%n", area );
 		
@@ -40,11 +39,11 @@ public class Main {
 
 		y.c= sc.nextDouble();
 		
-		areab = (y.a+y.b+y.c)/2;
-		
+		double areab = y.area();
+
         System.out.printf("A area do triângulo 2 é de %.2f%n", areab );
         
-        area_maior = (area + areab)/2;
+		 double areaf = (area + areab)/2.0;
         
         
         
@@ -54,7 +53,7 @@ public class Main {
 
         } else {
 
-            System.out.printf("%n Analisando os fatores presentes conclui-se que o triangulo de maior area é o Segundo" );
+            System.out.printf("%n Analisando os fatores presentes conclui-se que o 21  triangulo de maior area é o Segundo" );
 
         }
         
